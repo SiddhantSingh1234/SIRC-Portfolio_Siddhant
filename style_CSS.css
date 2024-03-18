@@ -1,0 +1,313 @@
+body {
+    background-color: black;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    z-index: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.name {
+    font-family: Whisper;
+    font-weight: bold;
+    font-size: 40px;
+    color: whitesmoke;
+    float: left;
+    padding-left: 40px;
+    justify-content: left;
+}
+
+.links {
+    padding-right: 24px;
+}
+
+.links a {
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 32;
+}
+
+.links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: 0.6s;
+}
+
+.links a:hover::before {
+    width: 100%;
+}
+
+.links a:hover {
+    background-color: rgb(200, 60, 60);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header_details {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+header h1 {
+    text-align: right;
+    font-family: Bebas Neue;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header h2 {
+    text-align: right;
+    font-family: Consolas;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+.header_image {
+    margin-left: 6px;
+}
+
+span {
+    color: lightseagreen;
+}
+
+section.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Mali;
+    color: whitesmoke;
+}
+
+section h2 {
+    font-family: Consolas;
+}
+
+div.about_image {
+    background-color: rgb(40,40,40);
+    border-radius: 10px;
+    margin-right: 0px;
+}
+
+div.about_details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 48%;
+    margin-left: 0px;
+    font-size: 18px;
+}
+
+div.about_skills_and_education {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+hr {
+    border: 4px solid whitesmoke;
+    border-radius: 2px;
+}
+
+.btn {
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+section.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Mali;
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.image1, div.image2 {
+    width: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+div.image2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div.projects_text {
+    width: 20%;
+    font-family: Consolas;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+div.image1 img, div.image3 img, div.image4 img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.image1 img:hover {
+    border: 4px solid whitesmoke;
+    box-shadow: 4px 4px 4px whitesmoke;
+}
+
+.image2 img:hover {
+    border: 4px solid whitesmoke;
+    box-shadow: 4px 4px 4px whitesmoke;
+}
+
+footer {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.footer_details h1 {
+    font-family: Consolas;
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.footer_details {
+    font-family: Mali;
+    font-size: 16px;
+}
+
+.footer_feedback {
+    font-family: Mali;
+    font-size: 16px;
+    text-align: right;
+}
+
+input[type=text] {
+    background-color: rgb(60, 60, 60);
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    transition: 0.6s;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+}
+
+input[type=text]:focus {
+    background-color: black;
+    color: whitesmoke;
+}
+
+input[type=email] {
+    background-color: rgb(60, 60, 60);
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    transition: 0.6s;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+}
+
+input[type=email]:focus {
+    background-color: black;
+    color: whitesmoke;
+}
+
+textarea {
+    background-color: rgb(60, 60, 60);
+    color: rgb(120, 120, 120);
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    transition: 0.6s;
+    height: 200px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+}
+
+textarea:focus {
+    background-color: black;
+    color: whitesmoke;
+}
+
+input[type=submit] {
+    background-color: lightseagreen;
+    border: none;
+    color: whitesmoke;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+input[type=submit]:hover {
+    background-color: royalblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
